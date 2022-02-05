@@ -6,6 +6,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/scrapy)
 ![Selenium](https://img.shields.io/badge/Selenium4.0-webdriver-green?style=plastic&logo=Selenium)
 ![unittest](https://img.shields.io/badge/unittest-yelloegreen?style=plastic&logo=unittest)
+![Black](https://img.shields.io/badge/code_style-black-black)
 
 This bot performs actions of: </br> 
 - checks all website pages on presence `Page not found` message on source page and save results to `.txt` file, 
