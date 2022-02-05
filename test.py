@@ -12,7 +12,7 @@ CHROME_DRIVER_PATH = os.getenv("CHROME_DRIVER_PATH", "./chromedriver")
 
 
 class Test(unittest.TestCase):
-    # method will test page on implicit broken links (Page not found)
+    # method will test page on presence broken links (Page not found)
     def test_page_not_found(self):
         warnings.simplefilter('ignore', ResourceWarning)
         s = Service(CHROME_DRIVER_PATH)
@@ -33,7 +33,7 @@ class Test(unittest.TestCase):
                 print("Page not found", link, file=f)
         driver.__exit__()
 
-    # this method will test page on implicit lorem ipsum text
+    # this method will test page on presence lorem ipsum text
     def test_lorem_ipsum_text(self):
         warnings.simplefilter('ignore', ResourceWarning)
         s = Service(CHROME_DRIVER_PATH)
@@ -54,7 +54,7 @@ class Test(unittest.TestCase):
                 print("Lorem ipsum on webpage", link, file=f)
         driver.__exit__()
 
-    # This method will test items grid on implicit broken images "Image not found"
+    # This method will test items grid on presence broken images "Image not found"
     def test_broken_images(self):
         warnings.simplefilter('ignore', ResourceWarning)
         s = Service(CHROME_DRIVER_PATH)
